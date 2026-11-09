@@ -7,9 +7,9 @@ from chanify import Chanify
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 # ================= KONFIGURASI (WAJIB DIGANTI) =================
-TOKEN = '9179230016:AAEjRHJNWQMRfOuL7HKUquCSymGhvqU3KYw'
-CHANIFY_KEY = 'chanify_live_52d503058bb495d63237215 9d00d9fca'
-ADMIN_ID = '9179230016'
+TOKEN ='9179230016:AAEjRHJNWQMRfOuL7HKUquCSymGhvqU3KYw'
+CHANIFY_KEY ='chanify_live_52d503058bb495d63237215 9d00d9fca'
+ADMIN_ID ='9228257333'
 # ===============================================================
 
 DB_FILE = "users.json"
