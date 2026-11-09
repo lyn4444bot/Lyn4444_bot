@@ -7,10 +7,10 @@ from chanify import Chanify
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================= KONFIGURASI =================
-# Token dan Key akan diambil dari Environment Variables Render
-TOKEN ='9179230016:AAGNWBAnrzVbEXDdZOhPS2u2LEqIuPkbEBU'
-CHANIFY_KEY ='chanify_live_52d503058bb495d63237215 9d00d9fca'
-ADMIN_ID ='9228257333'
+# ISI LANGSUNG DI SINI (Jangan pakai os.getenv lagi)
+TOKEN = '9179230016:AAGNWBAnrzVbEXDdZOhPS2u2LEqIuPkbEBU'
+CHANIFY_KEY = 'chanify_live_52d503058bb495d632372159d00d9fca'
+ADMIN_ID = '9228257333'
 DB_FILE = "users.json"
 # ===============================================
 
@@ -69,6 +69,7 @@ def handle_query(call):
         bot.send_message(call.message.chat.id, "Sedang menyiapkan iklan, mohon tunggu...")
         
         try:
+            # KODE IKLAN CHANIFY
             asyncio.run(chanify.show_ad(chat_id=call.message.chat.id, user=call.from_user))
             
             reward = random.choice([50, 100, 200])
@@ -79,7 +80,7 @@ def handle_query(call):
             bot.send_message(call.message.chat.id, f"🎉 Kamu mendapatkan **Rp{reward}** dari iklan ini!\nKetik /menu untuk kembali.", parse_mode='Markdown')
             
             if data[user_id]["saldo"] >= 50000:
-                bot.send_message(call.message.chat.id, "🔥 **SALDO KAMU SUDAH MENCAPAI Rp50.000!**\n\nUntuk melakukan penarikan, kamu wajib memposting video tentang bot ini di TikTok/Instagram/YouTube.\n\n**Syarat Video:**\n1. Video wajib benar-benar menghasilkan (tidak boleh video kosong).\n2. Jelaskan bahwa bot ini bisa menghasilkan uang.\n3. Sertakan link bot: t.me/Lyn4444_bot\n\nJika sudah posting, kirimkan **LINK VIDEO** kamu ke sini dengan format:\n`/klaim https://link-video-kamu.com`")
+                bot.send_message(call.message.chat.id, "🔥 **SALDO KAMU SUDAH MENCAPAI Rp50.000!**\n\nUntuk melakukan penarikan, kamu wajib memposting video tentang bot ini di TikTok/Instagram/YouTube.\n\nJika sudah posting, kirimkan **LINK VIDEO** kamu ke sini dengan format:\n`/klaim https://link-video-kamu.com`")
                 
         except Exception as e:
             bot.send_message(call.message.chat.id, f"❌ Gagal memuat iklan. Coba lagi nanti. (Error: {e})")
