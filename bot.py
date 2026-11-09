@@ -8,7 +8,9 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================= KONFIGURASI =================
 # ISI LANGSUNG DI SINI (Jangan pakai os.getenv lagi)
-TOKEN = '9179230016:AAGNWBAnrzVbEXDdZOhPS2u2LEqIuPkbEBU'
+TOKEN = 'AAEjRHJNWQMRfOuL7H
+
+KUquCSymGhvqU3KYw'
 CHANIFY_KEY = 'chanify_live_52d503058bb495d632372159d00d9fca'
 ADMIN_ID = '9228257333'
 DB_FILE = "users.json"
