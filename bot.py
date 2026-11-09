@@ -8,9 +8,9 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ================= KONFIGURASI =================
 # Token dan Key akan diambil dari Environment Variables Render
-TOKEN = os.getenv('9179230016:AAGNWBAnrzVbEXDdZOhPS2u2LEqIuPkbEBU')
-CHANIFY_KEY = os.getenv('chanify_live_52d503058bb495d63237215 9d00d9fca')
-ADMIN_ID = os.getenv('9228257333')
+TOKEN ='9179230016:AAGNWBAnrzVbEXDdZOhPS2u2LEqIuPkbEBU'
+CHANIFY_KEY ='chanify_live_52d503058bb495d63237215 9d00d9fca'
+ADMIN_ID ='9228257333'
 DB_FILE = "users.json"
 # ===============================================
 
