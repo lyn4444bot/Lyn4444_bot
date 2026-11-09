@@ -13,8 +13,8 @@ ADMIN_ID = '9228257333' # ID angka, bukan username
 # ===============================================================
 
 DB_FILE = "users.json"
-bot = telebot.TeleBot(9179230016:AAECtFXG8ZJ9YZLV4nd4d8WDW_Cm5aT2yRc)
-chanify = Chanify(chanify_live_52d503058bb495d632372159d00d9fca)
+bot = telebot.TeleBot('9179230016:AAECtFXG8ZJ9YZLV4nd4d8WDW_Cm5aT2yRc')
+chanify = Chanify('chanify_live_52d503058bb495d632372159d00d9fca')
 
 # --- Fungsi Database Sederhana ---
 def load_data():
